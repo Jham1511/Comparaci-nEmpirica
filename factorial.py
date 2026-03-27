@@ -44,10 +44,10 @@ for n in valores_n:
         ws.cell(row=8 + i, column=4, value=tiempos_iter[i])
         ws.cell(row=8 + i, column=6, value=tiempos_rec[i])
     
-    ws['B29'] = media_iter
-    ws['D29'] = media_rec
-    ws['B30'] = desv_iter
-    ws['D30'] = desv_rec
+    ws['D28'] = media_iter
+    ws['F28'] = media_rec
+    ws['D29'] = desv_iter
+    ws['F29'] = desv_rec
 
 wb.remove(wb['Plantilla Mediciones'])
 wb.save('Plantilla Mediciones_completada.xlsx')
